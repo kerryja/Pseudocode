@@ -1,0 +1,48 @@
+
+1. Programmers use pseudocode to help them develop algorithms and lay out what their code will be doing step by step. Pseudocode is used for brainstorming and it helps programmers plan out the tasks their code will be completing without a language syntax getting in the way.
+
+2. If you run pseudocode on the computer you will receive an error because it is strictly meant for humans to read. It does not have a specific language syntax so a machine would be unable to compute it. 
+
+Algorithms:
+
+1. 
+
+INPUT first number
+INPUT second number 
+
+IF first number is greater than second number THEN
+	PRINT first number
+ELSE 
+	PRINT second number
+END IF
+
+2.
+
+INPUT number = 1
+WHILE number <= 100
+	PRINT number
+END WHILE
+
+3. 
+
+FOR each object in the phonebook array
+	IF name argument is equal to name in object
+		RETURN object 
+	END IF
+END FOR
+	Otherwise RETURN ('Name not found') 
+
+var phonebook = [
+{name: 'Kerry', phone: 3, address: '80 Web'},
+{name: 'Jeremie', phone: 6, address: '45 Main'},
+{name: 'Matt', phone: 5, address: '68 Winter'}
+]
+
+function lookup(name) {
+  for (i = 0; i < phonebook.length; i ++) {
+    if (phonebook[i].name === name) {
+      return phonebook[i];
+    }
+  } 
+      return ('Name not found');
+}
